@@ -789,7 +789,7 @@ export default class CpmmModule extends ModuleBase {
               swapResult.destinationAmountSwapped,
             ),
       ],
-      instructionTypes: [fixedOut ? InstructionType.CpmmSwapBaseOut : InstructionType.ClmmSwapBaseIn],
+      instructionTypes: [fixedOut ? InstructionType.CpmmSwapBaseOut : InstructionType.CpmmSwapBaseIn],
     });
 
     txBuilder.addCustomComputeBudget(computeBudgetConfig);
